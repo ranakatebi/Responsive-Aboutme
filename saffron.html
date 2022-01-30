@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iranian Saffron</title>
+  </head>
+  <style>
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-family: cursive;
+      border: 1px solid #fff;
+      padding: 25px;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+      font-family: cursive;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      width: 80%;
+    }
+
+    ol {
+      list-style-position: inside;
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    li {
+      text-align: justify;
+      font-size: 16px;
+      font-family: cursive;
+      line-height: 30px;
+    }
+    .link {
+      text-decoration: none;
+      font-size: 14px;
+      color: #ffaf1b;
+    }
+    .link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    button {
+      font-size: 25px;
+      font-family: fantasy;
+      display: block;
+      margin: 0 auto;
+      padding: 20px 25px;
+      margin-bottom: 30px;
+      border: 1px solid #d60a17;
+      background: blueviolet;
+      background-color: #f7f5f6;
+      color: #d60a17;
+      box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    button:hover {
+      transition: opacity 300ms ease-in-out;
+      background-color: #ffaf1b;
+      color: #d60a17;
+      opacity: 1;
+    }
+    div {
+      background-image: linear-gradient(to top, #b356b0 0%, #d60a17 100%);
+      border-radius: 10px;
+      color: #fff;
+      width: 50%;
+      padding: 30px;
+      margin: 30px auto;
+      box-shadow: 0 1px 20px rgb(0 0 0 / 70%);
+    }
+    body {
+      background-color: #f7f5f6;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Do You Know What Is Saffron?</h1>
+      <h2>Especially Iranian Saffron!</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/136/original/All-you-need-to-know-about-Iranian-Saffron-the-Red-Gold-of-Iran.jpg?1639907386"
+        alt="Saffron"
+      />
+      <hr />
+
+      <ol>
+        <li>Saffron is taken from the stigmas of the Crocus flower.</li>
+        <li>
+          The most expensive spice in the world is saffron, also known as red
+          gold of Iran.
+        </li>
+        <li>95% of the world’s saffron comes from Iran.</li>
+        <li>
+          The best Iran saffron is cultivated in Khorasan’s arid lands in the
+          north-east of the country, with an area of about England’s size.
+        </li>
+
+        <li>
+          From every 150,000 to 200,000 saffron flowers, about 1 kilogram dried
+          saffron is obtained.
+        </li>
+
+        <li>
+          From every 150,000 to 200,000 saffron flowers, about 1 kilogram dried
+          saffron is obtained.
+        </li>
+
+        <li>
+          Iran saffron harvesting season starts from November 1st and lasts at
+          most three weeks.
+        </li>
+
+        <li>
+          Every year, many tourists from all over the world come to Iran saffron
+          farms during the harvesting season.
+        </li>
+
+        <li>
+          Some countries pack the Iran saffron and sell it under their name,
+          much more expensive.
+        </li>
+
+        <li>
+          Although Persian saffron has numerous therapeutic properties,
+          consuming more than 5 grams of it in one meal can cause human death.
+        </li>
+      </ol>
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/Saffron"
+          class="link"
+          target="_blank"
+        >
+          Read more on Wikipedia
+        </a>
+      </p>
+      <button>Was this article helpful?</button>
+    </div>
+    <script>
+      function submitBtn() {
+        let name = prompt("What is your name ?");
+        let question = prompt("Was this article helpful?");
+        question = question.toLocaleLowerCase();
+        if (question === "yes") {
+          alert(`Thanks ${name} for submitting your comment`);
+        } else {
+          prompt(
+            `Thanks ${name} for submitting your comment. What is your suggestion?`
+          );
+        }
+      }
+
+      let submitButton = document.querySelector("button");
+      submitButton.addEventListener("click", submitBtn);
+    </script>
+  </body>
+</html>
