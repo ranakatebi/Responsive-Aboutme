@@ -3,7 +3,7 @@
   --headings-font: "Playfair Display", serif;
   --primary-color: #f7f5f6;
   --secondary-color: #2b2b28;
-  --third-color: #cd9df2;
+  --third-color: #cd9cf2;
   --fourth-color: #f2ebfd;
   --shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -90,7 +90,7 @@ a:hover {
 }
 a:hover,
 nav li.active a {
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 .main-button {
   background-color: #2b2b28;
@@ -118,7 +118,7 @@ a {
 .page-hero {
   text-align: center;
   padding: 100px 20px;
-  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+  background-image: linear-gradient(to top, #f6f3ff 0%, #cd9cf2 100%);
 }
 
 .card-styling {
@@ -161,16 +161,24 @@ footer .email:hover {
 footer .social-links a {
   color: var(--third-color);
   background-color: var(--fourth-color);
-  font-size: 18px;
-  padding: 10px 14px;
-  border-radius: 30px;
-  margin: 0 20px;
+  font-size: 30px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  margin: 0 30px;
   transition: all 100ms ease-in-out;
+  width: 70px;
+  height: 70px;
+  text-align: center;
 }
 footer .social-links a:hover {
   color: var(--fourth-color);
   background-color: var(--third-color);
   transition: all 100ms ease-in-out;
+}
+.fab,
+.fas {
+  position: relative;
+  top: 4px;
 }
 .content h1 {
   font-size: 64px;
