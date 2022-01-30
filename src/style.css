@@ -5,7 +5,7 @@
   --secondary-color: #2b2b28;
   --third-color: #cd9df2;
   --fourth-color: #f2ebfd;
-  --shadow: 1px 1px 20px rgb(127, 127, 127, 0.1);
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -23,6 +23,7 @@ h1 {
 h1.header.mb-5 {
   font-size: 55px;
   text-align: center;
+  color: var(--secondary-color);
 }
 
 h2 {
@@ -38,7 +39,11 @@ h5 {
   font-weight: bold;
   color: var(--secondary-color);
 }
-
+.cv {
+  font-family: var(--headings-font);
+  color: var(--secondary-color);
+  font-size: 40px;
+}
 .page-hero h2 {
   font-size: 24px;
   font-family: var(--basic-font);
@@ -72,10 +77,12 @@ nav li {
 .btn-branding:hover {
   color: var(--primary-color);
 }
-
+.btn {
+  box-shadow: var(--shadow) !important;
+}
 .btn:hover {
   color: var(--fourth-color);
-  box-shadow: var(--shadow) !important;
+  box-shadow: none !important;
 }
 a:hover {
   color: var(--fourth-color);
@@ -178,7 +185,14 @@ footer .social-links a:hover {
 .project-btn {
   background-color: white;
   color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.project-button:hover,
+.project-btn:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 @media (max-width: 992px) {
