@@ -31,20 +31,20 @@
   </head>
   <body>
     <body>
-    <div class="container-fluid">
-      <nav class="d-flex justify-content-between position-absolute pt-3">
+    <div class="container-fluid pt-3">
+      <nav class="d-flex justify-content-between position-absolute">
         <a href="/" title="Homepage"
           ><img src="/image/woman-technologist.png" alt="woman codes icon" class="logo"
         /></a>
 
         <ul>
-          <li class="active">
+          <li>
             <a href="index.html" title="Homepage">Home</a>
           </li>
-          <li>
+          <li >
             <a href="/about.html" title="About Rana">About</a>
           </li>
-          <li>
+          <li class="active">
             <a href="/projects.html" title="Rana's projects">Projects</a>
           </li>
           <li>
@@ -53,66 +53,83 @@
         </ul>
       </nav>
     </div>
-    <div class="page-hero">
-      <img
-        src="image/ranaimage.jpg"
-        class="main-picture img-fluid mx-auto d-block"
-        alt="Rana image"
-      />
-      <h1>Rana Katebi</h1>
-      <h2>Front-end developer</h2>
-      <a
-        href="/contact.html"
-        class="btn btn-branding mt-5 main-button shadow"
-        title="Contact Dominika Walska"
-        >Contact me</a
-      >
-    </div>
+  
 
-    <div class="container content-container">
-      <h2 class="text-center mt-5 mb-5">My projects</h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card card-styling">
-            <a
-              href="#"
-              title="Saffron page project"
-              target="_blank"
-              ><img
-                src="image/saffron.jpg"
-                class="card-img-top"
-                alt="Saffron page project"
-            /></a>
-
-            <div class="card-body">
-              <h3 class="card-title text-center">Saffron Page project</h3>
-              <p class="card-text text-center">
-                Built with HTML, CSS and Vanilla JS
-              </p>
-            </div>
-          </div>
+      <div class="container content-container pt-5 pb-5 ">
+      <div class="content">
+        <h1 class="header mb-5">Take a look at what I've been working on!</h1>
+      </div>
+      <div class="row mb-5">
+        <div class="col d-none d-lg-block">
+          <a
+            href="#"
+            title="Saffron Page project"
+            target="_blank"
+          >
+            <img
+              src="/image/saffron.jpg"
+              alt="Saffron Page project"
+              class="img-fluid p-4"
+          /></a>
         </div>
 
-        <div class="col-lg-6">
-          <div class="card card-styling">
+        <div class="col">
+          <div class="description-section p-4">
+            <h2 class="mb-5">Saffron Page Project</h2>
+            <p class="mb-5">
+              The first project I created was a simple landing page about
+              what is saffron? and I built it using basic knowledge of
+              HTML, CSS and JS.
+            </p>
+
             <a
               href="#"
-              title="Weather app"
+              class="btn btn-branding project-button"
+              title="Saffron Page Project"
               target="_blank"
-              ><img src="image/weather.jpg" class="card-img-top" alt="Weather app"
-            /></a>
-
-            <div class="card-body">
-              <h3 class="card-title text-center">Weather app</h3>
-              <p class="card-text text-center">
-                Built with API, hosted on GitHub and Netlify
-              </p>
-            </div>
+              >Check project</a
+            >
           </div>
         </div>
       </div>
 
-      <footer>
+      <div class="row mb-5">
+        <div class="col">
+          <div class="description-section p-4">
+            <h2 class="mb-5">Weather app</h2>
+            <p class="mb-5">
+              Thanks to weather app you can get, in the real time, the current
+              weather and the weather forecast for next 6 days. App is built in
+              Vanilla JS, is using APIs and is hosted on GitHub and Netlify.
+            </p>
+            <a
+              href="#"
+              class="btn btn-branding project-button"
+              title="Weather app"
+              target="_blank"
+              >Check project</a
+            >
+            <a
+              href="#"
+              class="btn btn-branding main-button"
+              title="GitHub link to weather app"
+              target="_blank"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-none d-lg-block">
+          <a href="#" target="_blank">
+            <img
+              src="/image/weather.jpg"
+              alt="Weather Project"
+              class="img-fluid p-4"
+          /></a>
+        </div>
+      </div>
+        <footer>
         <div
           class="inquiry-box d-flex justify-content-between d-none d-md-flex"
         >
@@ -171,5 +188,7 @@
         </p>
       </footer>
     </div>
+    
+   
   </body>
 </html>
