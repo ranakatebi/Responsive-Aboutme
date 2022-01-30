@@ -3,8 +3,8 @@
   --headings-font: "Playfair Display", serif;
   --primary-color: #f7f5f6;
   --secondary-color: #2b2b28;
-  --third-color: #CD9DF2;
-  --fourth-color: #F2EBFD;
+  --third-color: #cd9df2;
+  --fourth-color: #f2ebfd;
   --shadow: 1px 1px 20px rgb(127, 127, 127, 0.1);
 }
 
@@ -63,19 +63,18 @@ nav li {
 .btn:hover {
   color: var(--fourth-color);
   box-shadow: var(--shadow) !important;
-
 }
 a:hover {
   color: var(--fourth-color);
   transition: all 100ms ease-in-out;
 }
-a:hover , nav li.active a {
+a:hover,
+nav li.active a {
   color: var(--third-color);
 }
 .main-button {
-  background-color: #2B2B28;
+  background-color: #2b2b28;
   color: white;
-
 }
 .btn-branding {
   padding: 15px 30px;
@@ -138,7 +137,6 @@ footer .email:hover {
   text-decoration: none;
 }
 
-
 footer .social-links a {
   color: var(--third-color);
   background-color: var(--fourth-color);
@@ -153,6 +151,7 @@ footer .social-links a:hover {
   background-color: var(--third-color);
   transition: all 100ms ease-in-out;
 }
+
 @media (max-width: 992px) {
   nav a {
     font-size: 14px;
