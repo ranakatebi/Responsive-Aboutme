@@ -8,13 +8,12 @@
   --shadow: 1px 1px 20px rgb(127, 127, 127, 0.1);
 }
 
-.container{
+.container {
   margin-top: 50px;
 }
-.ranaphoto{
-border-radius: 10px;
-width: 500px;
-
+.ranaphoto {
+  border-radius: 10px;
+  width: 500px;
 }
 
 h1 {
@@ -133,6 +132,7 @@ p {
   font-size: 16px;
   line-height: 30px;
   font-weight: bold;
+  text-align: justify;
 }
 
 footer .email {
@@ -165,9 +165,9 @@ footer .social-links a:hover {
   line-height: 80px;
 }
 .content h2 {
-    font-size: 20px;
-    font-family: var(--basic-font);
-    font-weight: bold;
+  font-size: 20px;
+  font-family: var(--basic-font);
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
@@ -182,11 +182,24 @@ footer .social-links a:hover {
     padding: 80px 20px;
   }
   h1,
-  .content h1 {
+  .content h1,
+  h2 {
     font-size: 50px;
     line-height: 1.5;
+    text-align: center;
   }
   h2 {
     font-size: 44px;
-}
+  }
+  .content p {
+    text-align: center;
+    padding: 0;
+  }
+  .ranaphoto {
+    display: block;
+  }
+  .main-button {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
